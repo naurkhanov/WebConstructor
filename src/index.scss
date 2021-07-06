@@ -2,9 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
-
 body,
 h1,
 h2,
@@ -48,9 +47,9 @@ header {
   width: 100%;
   padding: 20px 20px;
   border-bottom: 1px solid #e4e6f1;
-}
-header h2 {
-  font-weight: 500;
+  h2 {
+    font-weight: 500;
+  }
 }
 
 .wrapper {
@@ -71,21 +70,22 @@ header h2 {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-}
-.widgets__wrapper .widgets__item {
-  width: 100px;
-  height: 85px;
-  padding: 15px 10px;
-  background-color: #f6f9fe;
-  border-radius: 6px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.widgets__wrapper .widgets__item .widgets__item__title {
-  font-weight: 400;
-  font-size: 12px;
-  color: #252a32;
+
+  .widgets__item {
+    width: 100px;
+    height: 85px;
+    padding: 15px 10px;
+    background-color: #f6f9fe;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .widgets__item__title {
+      font-weight: 400;
+      font-size: 12px;
+      color: rgba(37, 42, 50, 1);
+    }
+  }
 }
 
 main {
@@ -121,13 +121,13 @@ main {
   justify-content: center;
   margin-bottom: 20px;
   border-radius: 10px;
-}
-.constructor__item div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 12px;
-  font-weight: 400;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+  }
 }
 
 .view {
@@ -141,29 +141,28 @@ main {
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
-}
-.view__item img {
-  width: 100%;
-  height: 450px;
-}
-.view__item h3 {
-  text-align: center;
-  font-weight: 700;
-  font-size: 22px;
-}
-.view__item p {
-  text-align: center;
-  font-weight: 300;
-  font-size: 16px;
-  color: #97aacd;
-}
-.view__item button {
-  width: 145px;
-  height: 40px;
-  color: #fff;
-  border: none;
-  background-color: #4368e0;
-  border-radius: 4px;
-}
+  img {
+    width: 100%;
+    height: 450px;
+  }
+  h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(151, 170, 205, 1);
+  }
 
-/*# sourceMappingURL=index.css.map */
+  button {
+    width: 145px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    background-color: rgba(67, 104, 224, 1);
+    border-radius: 4px;
+  }
+}
